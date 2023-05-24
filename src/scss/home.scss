@@ -1,0 +1,24 @@
+h1{
+    color: rgb(72, 198, 49);
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+p{
+    font-size: 45px;
+}
+table tbody tr , td {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 20px;
+  }
+  table {
+    border : 15px solid rgb(255, 0, 0)
+  }
+
+  .container2{
+    width: 80%;
+    margin: auto;
+    background-color: red;
+  }
