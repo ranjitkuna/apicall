@@ -29,6 +29,27 @@ function Navbar() {
           </a>
          
         </li>
+
+        <li className="nav-item ">
+          <a className="nav-link " href="/login" >
+            Login
+          </a>
+         
+        </li>
+        <li className="nav-item ">
+          <a className="nav-link " href="/classcom" >
+            class
+          </a>
+         
+        </li>
+        <li className="nav-item ">
+          <a className="nav-link " href="/parent" >
+            parent
+          </a>
+         
+        </li>
+
+
        
       </ul>
       <form className="d-flex">

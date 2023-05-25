@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Outlet, Link } from "react-router-dom";
 import "../scss/home.scss";
-import axios from "axios";
-import AOS from 'aos';
-import { ApiService } from '../services/services';
 
+import AOS from 'aos';
+import axios from 'axios';
+import { ApiService } from '../services/services';
+let babu = process.env.REACT_APP_VAR_NAME
 
 function Home() {
   const [users, setUsers] = useState([])
@@ -21,9 +22,9 @@ function Home() {
   let url = "https://jsonplaceholder.typicode.com/posts" 
   
  function fetchingalldetails(){
-  axios.get(url).then((res)=>{
+  axios.get(url).then((res:any)=>{
     setUsers(res.data)
-  }).catch((err)=>{
+  }).catch((err:any)=>{
     console.log(err)
   })
  
@@ -51,7 +52,7 @@ function Home() {
      data-aos-duration="15000">
 
         
-        <h2  >first heading</h2>
+        <h2>first heading {babu}</h2>
         </div>
       </div>
       <div className="col-lg-6">

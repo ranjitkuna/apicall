@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ApiService } from '../services/services';
 import { NewApiService } from '../services/newService';
+import "../scss/apicall.scss"
 
 function Apicall() {
   const[data,setData] =  useState([])

@@ -6,11 +6,11 @@ function Contact() {
 
   useEffect(() => {
     ApiService.get('posts')
-      .then(responseData => {
+      .then((responseData:any) => {
         setData(responseData);
         console.log(responseData)
       })
-      .catch(error => console.error(error));
+      .catch((error:any) => console.error(error));
   }, []);
 
   return (
@@ -20,7 +20,7 @@ function Contact() {
     data.map((alldata:any)=>
         <ul>
           <li>{alldata.id}</li>
-          <li>{alldata.tit}</li>
+          <li>{alldata.title}</li>
           <li>{alldata.body}</li>
         </ul>
     )

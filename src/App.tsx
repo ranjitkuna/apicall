@@ -2,13 +2,17 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
 import Home from './components/home';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { BrowserRouter,Routes,Route, Form } from 'react-router-dom';
 import About from './components/about';
 import Contact from './components/contact';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Nopage from './components/nopage';
 import Apicall from './components/apicall';
+import Login from './components/login';
+import Classcomp from './components/classcomp';
+import Parent from './components/parent';
+
 
 function App() {
   return (
@@ -22,6 +26,9 @@ function App() {
         <Route path='/about' element={<About />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
         <Route path='/apicall' element={<Apicall />}></Route>
+        <Route path='/login' element={<Login />}></Route>
+        <Route path='/classcom' element={<Classcomp />}></Route>
+        <Route path='/parent' element={<Parent />}></Route>
         <Route path='*' element={<Nopage />}></Route>
      
       </Routes>
